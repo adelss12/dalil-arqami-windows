@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f8fc;
+    color: #17324d;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.app-header {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    background-color: #2477d4;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.app-header h1 {
+    margin: 0 0 6px;
+    font-size: 26px;
+}
+
+.app-header p {
+    margin: 0;
+    color: #71849a;
+    font-size: 14px;
+}
+.app-card {
+    width: 90%;
+    max-width: 1000px;
+    min-height: 550px;
+    margin: 0 auto 40px;
+    background-color: white;
+    border: 1px solid #dce7f1;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(30, 75, 115, 0.1);
+}
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 18px;
+    border-bottom: 1px solid #e5edf4;
+}
+
+.toolbar input {
+    flex: 1;
+    min-width: 240px;
+    height: 46px;
+    padding: 0 15px;
+    border: 1px solid #dce7f1;
+    border-radius: 12px;
+    outline: none;
+}
+
+.toolbar input:focus {
+    border-color: #2477d4;
+}
+
+.toolbar button {
+    min-height: 46px;
+    padding: 0 16px;
+    border: 1px solid #dce7f1;
+    border-radius: 12px;
+    background-color: white;
+    color: #17324d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#importButton {
+    background-color: #2477d4;
+    border-color: #2477d4;
+    color: white;
+}
+
+.toolbar .danger-button {
+    color: #c84848;
+    border-color: #efcccc;
+    background-color: #fffafa;
+}
+
+.contacts-list {
+    padding: 20px;
+}
+
+.empty-state {
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.empty-state h2 {
+    margin: 0 0 10px;
+    color: #17324d;
+}
+
+.empty-state p {
+    margin: 0;
+    color: #71849a;
+}
+.contact-item {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e5edf6;
+    background-color: #ffffff;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item h3 {
+    margin: 0 0 8px;
+    color: #102f55;
+    font-size: 18px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #55708f;
+    font-size: 16px;
+    direction: ltr;
+    text-align: right;
+}
+.app-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #f4f8fc;
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+.sticky-search {
+    position: sticky;
+    top: 100px;
+    z-index: 90;
+    padding: 18px 20px 10px;
+    background-color: #ffffff;
+    border-radius: 24px 24px 0 0;
+}
+
+.sticky-search #searchInput {
+    display: block;
+    width: 100%;
+    height: 52px;
+    box-sizing: border-box;
+    padding: 0 18px;
+    border: 1px solid #cddced;
+    border-radius: 14px;
+    background-color: #ffffff;
+    color: #102f55;
+    font-size: 15px;
+    outline: none;
+}
+
+.sticky-search #searchInput:focus {
+    border-color: #287ed8;
+    box-shadow: 0 0 0 3px rgba(40, 126, 216, 0.12);
+}
+.app-card {
+    overflow: visible;
+}
+.toolbar {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+    padding: 12px 20px 18px;
+}
+
+.toolbar button {
+    width: 100%;
+    min-width: 0;
+    height: 44px;
+    padding: 0 6px;
+    font-size: 12px;
+    white-space: nowrap;
+}
