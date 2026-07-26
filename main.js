@@ -5,6 +5,7 @@ function createWindow() {
     const mainWindow = new BrowserWindow({
         width: 1100,
         height: 780,
+        icon: path.join(__dirname, "assets", "icon.ico"),
         minWidth: 500,
         minHeight: 650,
         autoHideMenuBar: true,

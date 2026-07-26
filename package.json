@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "package": "electron-packager . Dalil-Arqami --platform=win32 --arch=x64 --out=dist --overwrite --asar"
+    "package": "electron-packager . Dalil-Arqami --platform=win32 --arch=x64 --out=dist --overwrite --asar --icon=assets/icon.ico"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
   "homepage": "https://github.com/adelss12/dalil-arqami-windows#readme",
   "devDependencies": {
     "@electron/packager": "^20.0.4",
-    "electron": "^43.2.0"
+    "electron": "^43.2.0",
+    "png-to-ico": "^3.0.2",
+    "sharp": "^0.35.3"
   }
 }
